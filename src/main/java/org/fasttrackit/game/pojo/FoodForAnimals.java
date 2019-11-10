@@ -3,10 +3,18 @@ package org.fasttrackit.game.pojo;
 import java.util.ArrayList;
 
 public class FoodForAnimals {
+    private int id;
     private String name;
     private int numberOfPortionsAvailable;
     private int changeHungerLevel;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

@@ -3,8 +3,8 @@ package org.fasttrackit.game.pojo;
 public class Dogs extends Animal {
     private String race;
 
-    public Dogs(String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour, String race) {
-        super(name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
+    public Dogs(int id,String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour, String race) {
+        super(id,name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
         this.race = race;
     }
 

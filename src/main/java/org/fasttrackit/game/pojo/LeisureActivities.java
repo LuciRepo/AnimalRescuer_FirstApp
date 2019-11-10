@@ -1,9 +1,18 @@
 package org.fasttrackit.game.pojo;
 
 public class LeisureActivities {
+    private int id;
     private String activityName;
     private int changeMoodLevel;
     private int numberOfActivitiesRemaining;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getActivityName() {
         return activityName;

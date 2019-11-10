@@ -1,6 +1,9 @@
 package org.fasttrackit.game.pojo;
 
+import org.fasttrackit.game.persistence.AnimalRepository;
+
 public class Animal {
+    private int id;
     private String name;
     private int age;
     private int healthLevel;
@@ -8,6 +11,14 @@ public class Animal {
     private int moodLevel;
     private double weight;
     private String colour;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -65,7 +76,8 @@ public class Animal {
         this.colour = colour;
     }
 
-    public Animal(String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour) {
+    public Animal(int id,String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour) {
+        this.id=id;
         this.name = name;
         this.age = age;
         this.healthLevel = healthLevel;

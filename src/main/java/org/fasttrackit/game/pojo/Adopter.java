@@ -1,13 +1,20 @@
 package org.fasttrackit.game.pojo;
 
 public class Adopter {
+    private int id;
     private String firstName;
     private String lastName;
     private int age;
     private String sex;
     private String occupation;
-    Animal a;
-    FoodForAnimals f;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -62,7 +69,8 @@ public class Adopter {
 
     public void feedPet() {
     }
-    public void playPet(){
+
+    public void playPet() {
 
     }
 }

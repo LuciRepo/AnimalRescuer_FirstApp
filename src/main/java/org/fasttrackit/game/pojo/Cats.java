@@ -3,8 +3,8 @@ package org.fasttrackit.game.pojo;
 public class Cats extends Animal {
     private String race;
 
-    public Cats(String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour) {
-        super(name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
+    public Cats(int id,String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour) {
+        super(id,name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
         this.race = race;
     }
 
@@ -16,8 +16,8 @@ public class Cats extends Animal {
         this.race = race;
     }
 
-    public Cats(String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour, String race) {
-        super(name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
+    public Cats(int id,String name, int age, int healthLevel, int hungerLevel, int moodLevel, double weight, String colour, String race) {
+        super(id,name, age, healthLevel, hungerLevel, moodLevel, weight, colour);
         this.race = race;
     }
 
